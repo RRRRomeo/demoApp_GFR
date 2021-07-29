@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1445069A26B036BD00377400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1445069926B036BD00377400 /* AppDelegate.swift */; };
 		1445069C26B036BD00377400 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1445069B26B036BD00377400 /* SceneDelegate.swift */; };
-		1445069E26B036BD00377400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1445069D26B036BD00377400 /* ViewController.swift */; };
-		144506A126B036BD00377400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1445069F26B036BD00377400 /* Main.storyboard */; };
 		144506A326B036BD00377400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144506A226B036BD00377400 /* Assets.xcassets */; };
-		144506A626B036BD00377400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144506A426B036BD00377400 /* LaunchScreen.storyboard */; };
+		14A643D226B2E05D00487DEC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A643D126B2E05D00487DEC /* MainViewController.swift */; };
+		14A643D426B2E09700487DEC /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A643D326B2E09700487DEC /* HomeTableViewController.swift */; };
+		14A643D626B2E0AC00487DEC /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A643D526B2E0AC00487DEC /* DiscoverTableViewController.swift */; };
+		14A643D826B2E0B800487DEC /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A643D726B2E0B800487DEC /* MessageTableViewController.swift */; };
+		14A643DA26B2E0D400487DEC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A643D926B2E0D400487DEC /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1445069626B036BD00377400 /* xinlangWeibo_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xinlangWeibo_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1445069926B036BD00377400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1445069B26B036BD00377400 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1445069D26B036BD00377400 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		144506A026B036BD00377400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		144506A226B036BD00377400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		144506A526B036BD00377400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		144506A726B036BD00377400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14A643D126B2E05D00487DEC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		14A643D326B2E09700487DEC /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		14A643D526B2E0AC00487DEC /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		14A643D726B2E0B800487DEC /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		14A643D926B2E0D400487DEC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,113 @@
 		1445069826B036BD00377400 /* xinlangWeibo_swift */ = {
 			isa = PBXGroup;
 			children = (
-				1445069926B036BD00377400 /* AppDelegate.swift */,
-				1445069B26B036BD00377400 /* SceneDelegate.swift */,
-				1445069D26B036BD00377400 /* ViewController.swift */,
-				1445069F26B036BD00377400 /* Main.storyboard */,
-				144506A226B036BD00377400 /* Assets.xcassets */,
-				144506A426B036BD00377400 /* LaunchScreen.storyboard */,
-				144506A726B036BD00377400 /* Info.plist */,
+				14A643D026B2DB4F00487DEC /* Supporting Files */,
+				14A643C526B2DAE900487DEC /* Classes */,
 			);
 			path = xinlangWeibo_swift;
+			sourceTree = "<group>";
+		};
+		14A643C526B2DAE900487DEC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14A643C626B2DAE900487DEC /* ViewModels */,
+				14A643C726B2DAE900487DEC /* Tools */,
+				14A643C826B2DAE900487DEC /* Models */,
+				14A643C926B2DAE900487DEC /* Lib */,
+				14A643CA26B2DAE900487DEC /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		14A643C626B2DAE900487DEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14A643C726B2DAE900487DEC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		14A643C826B2DAE900487DEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14A643C926B2DAE900487DEC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		14A643CA26B2DAE900487DEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14A643CB26B2DAE900487DEC /* Home */,
+				14A643CC26B2DAE900487DEC /* Discover */,
+				14A643CD26B2DAE900487DEC /* Message */,
+				14A643CE26B2DAE900487DEC /* Profile */,
+				14A643CF26B2DAE900487DEC /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14A643CB26B2DAE900487DEC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				14A643D326B2E09700487DEC /* HomeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		14A643CC26B2DAE900487DEC /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				14A643D526B2E0AC00487DEC /* DiscoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		14A643CD26B2DAE900487DEC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				14A643D726B2E0B800487DEC /* MessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		14A643CE26B2DAE900487DEC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				14A643D926B2E0D400487DEC /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		14A643CF26B2DAE900487DEC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				14A643D126B2E05D00487DEC /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		14A643D026B2DB4F00487DEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1445069926B036BD00377400 /* AppDelegate.swift */,
+				1445069B26B036BD00377400 /* SceneDelegate.swift */,
+				144506A226B036BD00377400 /* Assets.xcassets */,
+				144506A726B036BD00377400 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				144506A626B036BD00377400 /* LaunchScreen.storyboard in Resources */,
 				144506A326B036BD00377400 /* Assets.xcassets in Resources */,
-				144506A126B036BD00377400 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,32 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1445069E26B036BD00377400 /* ViewController.swift in Sources */,
+				14A643DA26B2E0D400487DEC /* ProfileTableViewController.swift in Sources */,
+				14A643D426B2E09700487DEC /* HomeTableViewController.swift in Sources */,
+				14A643D226B2E05D00487DEC /* MainViewController.swift in Sources */,
 				1445069A26B036BD00377400 /* AppDelegate.swift in Sources */,
+				14A643D626B2E0AC00487DEC /* DiscoverTableViewController.swift in Sources */,
+				14A643D826B2E0B800487DEC /* MessageTableViewController.swift in Sources */,
 				1445069C26B036BD00377400 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1445069F26B036BD00377400 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				144506A026B036BD00377400 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		144506A426B036BD00377400 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				144506A526B036BD00377400 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		144506A826B036BD00377400 /* Debug */ = {
@@ -286,15 +371,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZH6FW93MWB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = xinlangWeibo_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhimatangyuan.xinlangWeibo-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taipingTangyuan.xinlangWeibo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +392,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZH6FW93MWB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = xinlangWeibo_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhimatangyuan.xinlangWeibo-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taipingTangyuan.xinlangWeibo-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
