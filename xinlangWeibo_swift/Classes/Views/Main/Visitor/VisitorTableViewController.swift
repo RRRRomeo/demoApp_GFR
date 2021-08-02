@@ -8,10 +8,8 @@
 import UIKit
 
 class VisitorTableViewController: UITableViewController {
-    
     ///用户登录标记
     private var userLogin = false
-    
     override func loadView() {
         print("执行到loadView")
 //        if userLogin != false {
@@ -23,8 +21,9 @@ class VisitorTableViewController: UITableViewController {
         userLogin ? super.loadView() : setLoadView()
     }
     private func setLoadView(){
-        view = UIView()
-        view.backgroundColor = UIColor.orange
+        view = VisitorView()
+
+//        view.backgroundColor = UIColor.orange
         
     }
     

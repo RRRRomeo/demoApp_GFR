@@ -8,6 +8,11 @@
 import UIKit
 
 class MainViewController: UITabBarController {
+    ///MARK - Button clickevent functions
+    @objc private func composedButtonClick(){
+        print("i'm touched rightNow")
+    }
+    ///MARK - 视图生命周期函数
     //重写viewWillAppear方法来推送按钮到页面前面
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -55,6 +60,7 @@ extension MainViewController{
         let count = self.children.count
         let width = tabBar.bounds.width / CGFloat(count) - 1
         composedButton.frame = tabBar.bounds.insetBy(dx: 2*width, dy: 0)
+        composedButton.addTarget(self, action: (#selector(self.composedButtonClick)), for: UIControl.Event.touchUpInside)
         
         
     }
