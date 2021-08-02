@@ -21,6 +21,7 @@ class MainViewController: UITabBarController {
         
     }
     ///MARK - 懒加载控件
+
     private lazy var composedButton:UIButton = UIButton(imageName: "push", backIamgeName: "pushbackground")
 }
 
