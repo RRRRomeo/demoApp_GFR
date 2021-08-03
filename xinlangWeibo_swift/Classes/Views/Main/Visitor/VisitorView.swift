@@ -34,20 +34,42 @@ class VisitorView: UIView {
     }
     private func setLoadView() {
         let demoView = UIView()
-        demoView.frame = CGRect(x: 150, y: 300, width: 100, height: 100)
-        demoView.backgroundColor = UIColor.red
+        demoView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        demoView.backgroundColor = UIColor.white
         
         let demoButton = UIButton()
-        demoButton.frame = CGRect(x: 0, y: 0, width: 46, height: 46)
+        demoButton.frame = CGRect(x: self.frame.midX, y: self.frame.midY, width: 46, height: 46)
         demoButton.setBackgroundImage(.add, for: UIControl.State.normal)
 //        demoButton.backgroundColor = .blue
         self.testDemoButton = demoButton
         demoButton.addTarget(self, action: #selector(self.demoButtonClick), for: .touchUpInside)
         demoView.addSubview(demoButton)
         self.addSubview(demoView)
+        //banner创建测试
+        addBannerView()
+        
+    }
+    private lazy var bannerView:UIScrollView = {
+        var bannerView = UIScrollView()
+        bannerView.frame = CGRect(x: 0, y: 160, width: 100, height: 100)
+        bannerView.backgroundColor = .blue
+        self.addSubview(bannerView)
+        return bannerView
+    }()
+    private func addBannerView(){
+        let imageView = UIImageView()
+        imageView.center = self.bannerView.center
+        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        imageView.backgroundColor = .brown
+        self.bannerView.addSubview(imageView)
+        print("iamgeView already created into bannerView")
         
     }
 }
+///MARK- 页面搭建效果
+//banner轮播效果
 extension VisitorView {
-
+    //banner
+    //1创建一个scrollView
+    //2scrollView里放一个ImageView,安装定时器
 }
