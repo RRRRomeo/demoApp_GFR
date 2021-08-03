@@ -22,8 +22,19 @@ class VisitorTableViewController: UITableViewController {
     }
     private func setLoadView(){
         view = VisitorView()
-
 //        view.backgroundColor = UIColor.orange
+    }
+    
+    ///视图生命周期函数
+    override func viewDidLoad() {
+        let testView = UIView()
+        testView.backgroundColor = .orange
+        testView.frame = CGRect(x: 0, y: 0, width: 300, height: 50)
+        let rightButton = UIBarButtonItem(image: UIImage(named: "imageNormal"), style: .plain, target: self, action: nil)
+        
+        self.navigationItem.titleView = testView
+        self.navigationItem.setRightBarButton(rightButton, animated: true)
+        print("titlteView rewrited")
         
     }
     
